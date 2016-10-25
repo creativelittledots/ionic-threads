@@ -30,7 +30,7 @@ To customise the thread (comment container) template define a template url:
 To custom the comment template, you can define a **comment_template** in the $scope.
 
 ```js
-scope.comment_template = "my/custom/template.html";
+scope.commentTemplate = "my/custom/template.html";
 ```
 
 Or you can update the path in your custom thread and comment templates

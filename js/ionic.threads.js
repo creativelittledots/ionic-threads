@@ -5,8 +5,8 @@
         .directive('ionComment', ionComment)
         .directive('ionThread', ionThread);
         
-	var thread_template = currentScriptPath.replace('js/ionic.threads.js', 'templates/thread.html'),
-		comment_template = currentScriptPath.replace('js/ionic.threads.js', 'templates/comment.html');
+	var threadTemplate = currentScriptPath.replace('js/ionic.threads.js', 'templates/thread.html'),
+		commentTemplate = currentScriptPath.replace('js/ionic.threads.js', 'templates/comment.html');
 
     function ionComment() {
         return {
@@ -16,7 +16,7 @@
                 comment: '='
             },
             templateUrl: function(elem, attrs) {
-				return attrs.template || comment_template;
+				return attrs.template || commentTemplate;
 			}
         }
     }
@@ -29,10 +29,10 @@
                 comments: '='
             },
             templateUrl: function(elem, attrs) {
-				return attrs.template || thread_template
+				return attrs.template || threadTemplate
 			},
             link: function (scope, element, attrs) {
-	        	scope.comment_template = scope.comment_template || comment_template;
+	        	scope.commentTemplate = scope.commentTemplate || commentTemplate;
             }
         }
     }
