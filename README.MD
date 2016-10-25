@@ -9,8 +9,8 @@ Threaded comments for Ionic and Angular. Used for collapsible nested comment thr
 Include `ionic.threads.js` and `ionic.threads.css` after the rest of your Ionic and Angular includes.
 
 ```html
-<script src="lib/ionic-threads/ionic.threads.js"></script>
-<link href="lib/ionic-threads/ionic.threads.css" rel="stylesheet">
+<script src="lib/ionic-threads/js/ionic.threads.js"></script>
+<link href="lib/ionic-threads/css/ionic.threads.css" rel="stylesheet">
 ```
 
 Add `ionicThreads` as a module dependency of your app. Then use the following AngularJS directives:
