@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="ioniccollapsiblecommentthreadscustomisedbysurgeons">Ionic Collapsible Comment Threads (Customised by Surgeons)</h1>
+
+<p>Based on <a href="https://github.com/nickplesha/ionic-threads">nickplesha/ionic-threads</a></p>
+
+<p>Threaded comments for Ionic and Angular. Used for collapsible nested comment threads with multiple levels of indendation for Wordpress, Reddit or various other social networks. Can also be used to display any other list of comments.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Include <code>ionic.threads.js</code> and <code>ionic.threads.css</code> after the rest of your Ionic and Angular includes.</p>
+
+<pre><code class="html">&lt;script src=&quot;lib/ionic-threads/ionic.threads.js&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;lib/ionic-threads/ionic.threads.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre>
+
+<p>Add <code>ionicThreads</code> as a module dependency of your app. Then use the following AngularJS directives:</p>
+
+<pre><code class="html">&lt;ion-thread template=&quot;my/custom/template.html&quot; comments=&quot;comments&quot;&gt;&lt;/ion-thread&gt;
+</code></pre>
+
+<h2 id="customizing">Customizing</h2>
+
+<p>To customise the thread (comment container) template define a template url:</p>
+
+<pre><code class="html">&lt;ion-thread template=&quot;my/custom/template.html&quot; comments=&quot;comments&quot;&gt;&lt;/ion-thread&gt;
+</code></pre>
+
+<p>To custom the comment template, you can define a <strong>comment_template</strong> in the $scope.</p>
+
+<pre><code class="js">scope.comment_template = &quot;my/custom/template.html&quot;;
+</code></pre>
+
+<p>Or you can update the path in your custom thread and comment templates</p>
+
+<pre><code class="html">&lt;ion-comment template=&quot;my/custom/template.html&quot; comment=&quot;comment&quot;&gt;&lt;/ion-comment&gt;
+</code></pre>
+
+<p>Included is the <code>scss/ionic.threads.scss</code> if you want to customise the styling. </p>
+
+<p>There are variables for colours, font sizes and thread indentation. </p>
+
+<p>Add <code>ionic.threads.scss</code> to your <code>scss</code> folder and include it in your <code>ionic.app.scss</code> file with:</p>
+
+<pre><code class="javascript">@import &quot;www/lib/ionic-threads/scss/ionic.threads.scss&quot;;
+</code></pre>
+
+<h2 id="license">License</h2>
+
+<p>MIT</p>
+
+</body>
+</html>
