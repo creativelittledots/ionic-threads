@@ -16,27 +16,21 @@ Include `ionic.threads.js` and `ionic.threads.css` after the rest of your Ionic 
 Add `ionicThreads` as a module dependency of your app. Then use the following AngularJS directives:
 
 ```html
-<ion-thread template="my/custom/template.html" comments="comments"></ion-thread>
+<ion-thread comments="entity.comments" reply-to-comment="replyToComment(comment)"></ion-thread>
 ```
 
-## Customizing
+## Full Usage
 
 To customise the thread (comment container) template define a template url:
 
 ```html
-<ion-thread template="my/custom/template.html" comments="comments"></ion-thread>
+<ion-thread comments="entity.comments" comment-template="views/comment.html" reply-to-comment="replyToComment(comment)"></ion-thread>
 ```
 
-To custom the comment template, you can define a **comment_template** in the $scope.
-
-```js
-scope.commentTemplate = "my/custom/template.html";
-```
-
-Or you can update the path in your custom thread and comment templates
+To customise the comment template, you can define a **comment-template** attribute on the directive
 
 ```html
-<ion-comment template="my/custom/template.html" comment="comment"></ion-comment>
+<ion-thread comments="entity.comments" comment-template="views/comment.html" reply-to-comment="replyToComment(comment)"></ion-thread>
 ```
 
 Included is the `scss/ionic.threads.scss` if you want to customise the styling. 
@@ -45,7 +39,7 @@ There are variables for colours, font sizes and thread indentation.
 
 Add `ionic.threads.scss` to your `scss` folder and include it in your `ionic.app.scss` file with:
 
-```javascript
+```css
 @import "www/lib/ionic-threads/scss/ionic.threads.scss";
 ```
 

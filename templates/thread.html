@@ -1,10 +1,10 @@
-<ion-list ng-if="comments && comments.length > 0" class="comments-list">
+<ion-list ng-if="comments && comments.length > 0" class="ion-comments-list">
 
 	<ul>
 		
 		<li ng-repeat="comment in comments">
 		
-			<ion-comment ng-template="commentTemplate" comment="comment"></ion-comment>
+			<ion-comment comment="comment"></ion-comment>
 		
 		</li>
 		
