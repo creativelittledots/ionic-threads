@@ -16,16 +16,12 @@
 	
 </ion-item>
 
-<div class="reddit-post--comment--container">
-	
-	 <ul ng-if="!comment.showChildren" class="animate-if ion-comment--children">
-		 
-	    <li ng-repeat="comment in comment.responses">
-	    
-	    	<ion-comment comment="comment"></ion-comment>
-	    
-	    </li>
-	    
-	</ul>
-	
-</div>
+<ul ng-if="comment.showChildren" class="ion-comment--children">
+	 
+    <li ng-repeat="comment in comment.responses">
+    
+    	<ion-comment comment="comment"></ion-comment>
+    
+    </li>
+    
+</ul>
