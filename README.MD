@@ -1,4 +1,4 @@
-# Ionic Collapsible Comment Threads (Customised by Surgeons)
+# Ionic Collapsible Comment Threads (Customised by Creative Little Dots)
 
 Based on [nickplesha/ionic-threads](https://github.com/nickplesha/ionic-threads)
 
